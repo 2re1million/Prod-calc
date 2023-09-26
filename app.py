@@ -4,7 +4,7 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
     # Konverterer minutter til timer
     hours_saved_per_day = minutes_saved / 60
     # Antall arbeidsdager i et år (vanligvis ca. 250)
-    work_days_per_year = 250
+    work_days_per_year = 230
     # Total antall timer spart per år
     total_hours_saved = hours_saved_per_day * work_days_per_year * num_employees
     # Konverter lønn fra årlig til timebasis
