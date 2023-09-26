@@ -20,7 +20,7 @@ st.markdown('### Hva koster manuelt arbeid bedriften virkelig?')
 st.write("""
 I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive oppgaver manuelt? Føre inn samme data i to forskjellige system, for eksempel, er en notorisk tidstyv. Men den gode nyheten? Med riktig teknologi kan slike oppgaver effektivt elimineres ved å la systemene dine kommunisere sammen.
 """)
-st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene 🔧 ")
+st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
 
 
 # Inputs fra bruker
