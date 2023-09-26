@@ -23,7 +23,7 @@ st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved �
 
 
 # Inputs fra bruker
-X = st.slider('Hvor mange minutter bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 20)
+X = st.slider('Hvor mange minutter bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
 Y = int(st.text_input('Hvor mange ansatte utfører disse oppgavene regelmessig?', 5))
 W = int(st.text_input('Gjennomsnittlig årlig lønn for disse ansatte (i NOK):', 664680))
 st.write("")
