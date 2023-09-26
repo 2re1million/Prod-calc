@@ -18,7 +18,7 @@ st.markdown('### Hva koster manuelt arbeid bedriften virkelig?')
 
 # Ingress
 st.write("""
-I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive oppgaver manuelt? Føre inn samme data i to forskjellige system, er for eksempel, er en notorisk tidstyv. 
+I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive oppgaver manuelt? Føre inn samme data i to forskjellige system, er for eksempel en notorisk tidstyv. 
 Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid digitaliseres bort!
 """)
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
