@@ -13,24 +13,34 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
     total_savings = total_hours_saved * avg_hourly_salary * num_years
     return total_savings
 
-st.title('Kalkulator for besparelse ved digitalisering')
+st.title('Innsparingskalkulator - Kostnaden av manuelt, repetativt arbeid!')
+
+# Ingress
+st.write("""
+# Digitalisering av manuelt arbeid
+I dagens teknologiske verden kan nærmest all repetitivt manuelt arbeid digitaliseres bort på en eller annen måte. Spesielt dobbeltplotting er en "versting" det er enkelt å gjøre noe med, ved å få systemer til å prate sammen.
+""")
+st.write("Bruk kalkulatoren under for å se hvor mye du taper / kan spare ved å digitalisere enkelte arbeidsprosesser.")
+
 
 # Inputs fra bruker
 X = st.slider('Minutter spart per dag:', 0, 120, 20)
-Y = st.slider('Antall ansatte:', 1, 300, 5)
+Y = int(st.text_input('Antall ansatte:', 10))
 Z = st.slider('Antall år:', 1, 10, 2)
-W = st.slider('Gjennomsnittlig årlig lønn (i NOK):', 300000, 1500000, 664680)
+W = int(st.text_input('Gjennomsnittlig årlig lønn (i NOK):', 664680))
 
 # Beregner besparelsen
 savings = calculate_savings(X, Y, Z, W)
 
-# Budskapet for markedsføring
+# Resultat:
 st.write(f"🔍 **Analyseresultat:**")
 
 if savings > 0:
-    st.write(f"Ved å starte din digitaliseringsreise, kan din bedrift potensielt spare NOK {savings:,.2f} over {Z} år. Dette er ressurser som kan omdirigeres til andre nyttige arbeidsoppgaver, noe som kan gi stor verdi for organisasjonen din.")
+    st.write(f"Ved å digitalisere bort manuelt arbeid, kan di bedrift potensielt spare:")
+    st.write(f"NOK {savings:,.2f} over {Z} år!")
+    st.write(f"Dette er ressurser som kan omdirigeres til andre nyttige arbeidsoppgaver i organisasjonen din!")
     st.write("🚀 **WS er her for deg!**")
-    st.write("WS er din pålitelige partner på denne reisen. Vi er eksperter på å digitalisere bort manuelt arbeid som krever unødig med tid. La oss hjelpe deg å omdanne disse besparelsene til reell vekst for din bedrift!")
+    st.write("Digitalisere bort manuelt arbeid er vi eksperter på i WS. La oss hjelpe dere med å få mer ut av arbeidsdagen. Ta kontakt, så setter vi i gang -  post@webstep.no")
 else:
     st.write("Selv små forbedringer i effektivitet kan føre til store besparelser over tid. WS kan hjelpe deg med å identifisere og utnytte disse mulighetene. Start din digitaliseringsreise med oss!")
 
