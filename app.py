@@ -16,16 +16,17 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
 st.title('Kalkulator for besparelse ved digitalisering')
 
 # Inputs fra bruker
-X = st.slider('Minutter spart per dag:', 0, 300, 30)
-Y = st.slider('Antall ansatte:', 1, 500, 10)
-Z = st.slider('Antall år:', 1, 30, 5)
-W = st.slider('Gjennomsnittlig årlig lønn (i NOK):', 300000, 3000000, 600000)
+X = st.slider('Minutter spart per dag:', 0, 120, 20)
+Y = st.slider('Antall ansatte:', 1, 300, 5)
+Z = st.slider('Antall år:', 1, 10, 2)
+W = st.slider('Gjennomsnittlig årlig lønn (i NOK):', 300000, 1500000, 664680)
 
 # Beregner besparelsen
 savings = calculate_savings(X, Y, Z, W)
 
 # Viser resultatet
 st.write(f'Total besparelse over {Z} år: NOK {savings:,.2f}')
+st.write("La Webstep bistå i deres digitaliserings reise - la oss spare timer hver dag!")
 
 if st.button("Beregn på nytt"):
     st.experimental_rerun()
