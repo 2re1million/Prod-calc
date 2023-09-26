@@ -13,7 +13,7 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
     total_savings = total_hours_saved * avg_hourly_salary * num_years
     return total_savings
 
-st.title('Din innsparingskalkulator:) 
+st.title("Din innsparingskalkulator:") 
 st.title("Hva koster manuelt arbeid bedriften virkelig?")
 
 # Ingress
