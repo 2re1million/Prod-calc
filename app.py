@@ -13,21 +13,20 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
     total_savings = total_hours_saved * avg_hourly_salary * num_years
     return total_savings
 
-st.title('Innsparingskalkulator - Kostnaden av manuelt, repetativt arbeid!')
+st.title('Din innsparingskalkulator: Hva koster manuelt arbeid bedriften virkelig?')
 
 # Ingress
 st.write("""
-# Digitalisering av manuelt arbeid
-I dagens teknologiske verden kan nærmest all repetitivt manuelt arbeid digitaliseres bort på en eller annen måte. Spesielt dobbeltplotting er en "versting" det er enkelt å gjøre noe med, ved å få systemer til å prate sammen.
+🌍 I en verden dominert av teknologi, hvorfor skulle vi fortsatt utføre repetitive oppgaver manuelt? Dobbeltoppføring, for eksempel, er en notorisk tidstyv. Men den gode nyheten? Med riktig teknologi kan slike oppgaver effektivt elimineres ved å la systemene dine kommunisere sammen.
 """)
-st.write("Bruk kalkulatoren under for å se hvor mye du taper / kan spare ved å digitalisere enkelte arbeidsprosesser.")
+st.write("🔧 Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene.")
 
 
 # Inputs fra bruker
-X = st.slider('Minutter på manuelt repetativt -  per dag:', 0, 120, 20)
-Y = int(st.text_input('Antall ansatte som gjør disse oppgavene:', 10))
-Z = st.slider('Antall år for potensiell besparelse:', 1, 10, 2)
-W = int(st.text_input('Gjennomsnittlig årlig lønn (i NOK):', 664680))
+X = st.slider('Hvor mange minutter bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 20)
+Y = int(st.text_input('Hvor mange ansatte utfører disse oppgavene regelmessig?', 10))
+Z = st.slider('Hvor mange år ønsker du å se potensielle besparelser for?', 1, 10, 2)
+W = int(st.text_input('Gjennomsnittlig årlig lønn for disse ansatte (i NOK):', 664680))
 
 # Beregner besparelsen
 savings = calculate_savings(X, Y, Z, W)
@@ -35,14 +34,17 @@ savings = calculate_savings(X, Y, Z, W)
 # Resultat:
 st.write(f"🔍 **Analyseresultat:**")
 
+# Resultat:
+st.write(f"🔍 **Ditt potensiale:**")
+
 if savings > 0:
-    st.write(f"Ved å digitalisere bort manuelt arbeid, kan di bedrift potensielt spare:")
-    st.write(f"NOK {savings:,.2f} over {Z} år!")
-    st.write(f"Dette er ressurser som kan omdirigeres til andre nyttige arbeidsoppgaver i organisasjonen din!")
-    st.write("🚀 **WS er her for deg!**")
-    st.write("Digitalisere bort manuelt arbeid er vi eksperter på i WS. La oss hjelpe dere med å få mer ut av arbeidsdagen. Ta kontakt, så setter vi i gang -  post@webstep.no")
+    st.write(f"Tenk deg å kunne frigjøre opptil:")
+    st.write(f"🤑 NOK {savings:,.2f} over {Z} år!")
+    st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
+    st.write("🚀 **La WS vise vei!**")
+    st.write("Vi i WS er spesialister på å digitalisere manuelle oppgaver. Gi dine ansatte gaven av tid, og la oss hjelpe dere med å maksimere effektiviteten. Kontakt oss, og vi tar steget sammen - post@webstep.no")
 else:
-    st.write("Selv små forbedringer i effektivitet kan føre til store besparelser over tid. WS kan hjelpe deg med å identifisere og utnytte disse mulighetene. Start din digitaliseringsreise med oss!")
+    st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. La WS være din guide på veien mot digitalisering.")
 
 if st.button("Beregn på nytt"):
     st.experimental_rerun()
