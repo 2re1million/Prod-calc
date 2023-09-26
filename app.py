@@ -13,12 +13,13 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
     total_savings = total_hours_saved * avg_hourly_salary * num_years
     return total_savings
 
-st.markdown('## Din innsparingskalkulator:')
+st.markdown('## Din innsparingskalkulator: ')
 st.markdown('### Hva koster manuelt arbeid bedriften virkelig?')
 
 # Ingress
 st.write("""
-I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive oppgaver manuelt? Føre inn samme data i to forskjellige system, for eksempel, er en notorisk tidstyv. Men den gode nyheten? Med riktig teknologi kan slike oppgaver effektivt elimineres ved å la systemene dine kommunisere sammen.
+I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive oppgaver manuelt? Føre inn samme data i to forskjellige system, er for eksempel, er en notorisk tidstyv. 
+Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid digitaliseres bort!
 """)
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
 
