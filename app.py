@@ -24,9 +24,9 @@ st.write("Bruk kalkulatoren under for å se hvor mye du taper / kan spare ved å
 
 
 # Inputs fra bruker
-X = st.slider('Minutter spart per dag:', 0, 120, 20)
-Y = int(st.text_input('Antall ansatte:', 10))
-Z = st.slider('Antall år:', 1, 10, 2)
+X = st.slider('Minutter på manuelt repetativt -  per dag:', 0, 120, 20)
+Y = int(st.text_input('Antall ansatte som gjør disse oppgavene:', 10))
+Z = st.slider('Antall år for potensiell besparelse:', 1, 10, 2)
 W = int(st.text_input('Gjennomsnittlig årlig lønn (i NOK):', 664680))
 
 # Beregner besparelsen
