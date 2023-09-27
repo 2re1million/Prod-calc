@@ -50,7 +50,7 @@ st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved �
 
 # Inputs fra bruker
 X = st.slider('Hvor mange **minutter** bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
-st.number_input('**Antall ansatte** som jevnlig utfører disse oppgavene?', 8)
+Y = st.number_input('**Antall ansatte** som jevnlig utfører disse oppgavene?', 8)
 W = st.number_input('Gjennomsnittlig **årlig lønn** for disse ansatte (i NOK):', value=700000.0, format='%f')
 Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?', 1, 10, 3)
 
@@ -58,7 +58,7 @@ Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?'
 total_kostnad_per_ansatt = totale_kostnader_for_bedriften(W)
 
 # Bruke den totale kostnaden for en ansatt i stedet for bare årslønnen
-savings = calculate_savings(X, Y, Z, total_kostnad_per_ansatt)
+savings = calculate_savings(X, Y, Z,)
 
 if st.button("Beregn på nytt"):
     st.experimental_rerun()
