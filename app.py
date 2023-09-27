@@ -40,7 +40,6 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
 
 st.markdown('## Din innsparingskalkulator: ')
 st.markdown('### Hva koster manuelt arbeid bedriften virkelig?')
-
 # Ingress
 st.write("""
 I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive oppgaver manuelt? Føre inn samme data i to forskjellige system, er for eksempel en notorisk tidstyv. 
@@ -48,29 +47,33 @@ Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid dig
 """)
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
 
-# Inputs fra bruker
-X = st.slider('Hvor mange **minutter** bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
-Y = st.number_input('**Antall ansatte** som jevnlig utfører disse oppgavene?', 8)
-W = st.number_input('Gjennomsnittlig **årlig lønn** for disse ansatte (i NOK):', value=700000.0, format='%f')
-Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?', 1, 10, 3)
+# Opprett to kolonner
+col1, col2 = st.columns(2)
 
-# Kalkulere total kostnad for en ansatt
-total_kostnad_per_ansatt = totale_kostnader_for_bedriften(W)
+with col1:
+    # Inputs fra bruker
+    X = st.slider('Hvor mange **minutter** bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
+    Y = st.number_input('**Antall ansatte** som jevnlig utfører disse oppgavene?', 8)
+    W = st.number_input('Gjennomsnittlig **årlig lønn** for disse ansatte (i NOK):', value=700000.0, format='%f')
+    Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?', 1, 10, 3)
 
-# Bruke den totale kostnaden for en ansatt i stedet for bare årslønnen
-savings = calculate_savings(X, Y, Z, total_kostnad_per_ansatt)
+    # Kalkulere total kostnad for en ansatt
+    total_kostnad_per_ansatt = totale_kostnader_for_bedriften(W)
 
-if st.button("Beregn på nytt"):
-    st.experimental_rerun()
+    # Bruke den totale kostnaden for en ansatt i stedet for bare årslønnen
+    savings = calculate_savings(X, Y, Z, total_kostnad_per_ansatt)
+with col2:
+    if st.button("Beregn på nytt"):
+        st.experimental_rerun()
 
-# Resultat:
-st.write(f"🔍 **Ditt potensiale:**")
+    # Resultat:
+    st.write(f"🔍 **Ditt potensiale:**")
 
-if savings > 0:
-    st.write(f"Tenk deg å kunne frigjøre opptil:")
-    st.write(f" NOK {savings:,.2f} over {Z} år! 💸")
-    st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
-    st.write(" Sosiale utgifter er inkludert")
-    st.write("Vi i WS er spesialister på å digitalisere manuelle oppgaver. Gi dine ansatte gaven av tid, og la oss hjelpe dere med å maksimere effektiviteten. Kontakt oss, og vi tar steget sammen - post@webstep.no")
-else:
-    st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. La WS være din guide på veien mot digitalisering.")
+    if savings > 0:
+        st.write(f"Tenk deg å kunne frigjøre opptil:")
+        st.write(f" NOK {savings:,.2f} over {Z} år! 💸   -   *inkl arb.avgift etc..")
+        st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
+        
+        st.write("Vi i WS er spesialister på å digitalisere manuelle oppgaver. Gi dine ansatte gaven av tid, og la oss hjelpe dere med å maksimere effektiviteten. Kontakt oss, og vi tar steget sammen - post@webstep.no")
+    else:
+        st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. La WS være din guide på veien mot digitalisering.")
