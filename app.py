@@ -45,7 +45,7 @@ st.info("💡 I en verden dominert av teknologi, hvorfor skal vi fortsatt utfør
 Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid digitaliseres bort!")
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
 
-# Opprett to kolonner
+# Opprett to kolonner 
 col1, col2 = st.columns(2)
 
 with col1:
