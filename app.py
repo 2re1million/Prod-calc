@@ -38,6 +38,11 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
     total_savings = total_hours_saved * avg_hourly_salary * num_years
     return total_savings
 
+# Set title and intro message
+st.title('Exponential Savings 🤑')
+
+st.info("💡 Exponential growth is called the eight wonder of the world. It is a rapid increase in a quantity over time, characterized by a rate that is proportional to the current value of the quantity.")
+
 st.markdown('## Din innsparingskalkulator: ')
 st.markdown('### Hva koster manuelt arbeid bedriften virkelig?')
 # Ingress
@@ -46,7 +51,6 @@ I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive o
 Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid digitaliseres bort!
 """)
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
-
 
 st.info("💡 Exponential growth is called the eight wonder of the world. It is a rapid increase in a quantity over time, characterized by a rate that is proportional to the current value of the quantity.")
 
@@ -57,7 +61,7 @@ col1, col2 = st.columns(2)
 with col1:
     # Inputs fra bruker
     X = st.slider('Hvor mange **minutter** bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
-    Y = st.number_input('**Antall ansatte** som jevnlig utfører disse oppgavene?', 8)
+    Y = st.number_input('**Antall ansatte** som jevnlig utfører disse oppgavene?')
     W = st.number_input('Gjennomsnittlig **årlig lønn** for disse ansatte (i NOK):', value=700000.0, format='%f')
     Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?', 1, 10, 3)
 
