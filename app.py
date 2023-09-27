@@ -48,7 +48,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     # Inputs fra bruker
-    X = st.slider('Ca hvor mange **minutter** hver dag går tapt på grunn av trege og ineffektive datasystemer?', 0, 120, 30, step=5)
+    X = st.slider('Ca hvor mange **minutter** hver dag går tapt på grunn av trege og ineffektive datasystemer?(pr. ansatt)', 0, 120, 30, step=5)
     Y = st.number_input('Antall **ansatte** som påvirkes av disse systembegrensningene?', step=1)
     W = int(st.number_input('Ca. gjennomsnittlig **årlig lønn** for disse ansatte:', value=700000, step=10000)) 
     Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?', 1, 10, 3)
