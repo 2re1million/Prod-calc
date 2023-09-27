@@ -76,9 +76,9 @@ with col2:
     savings_int = int(savings)
 
     if savings > 0:
-        st.markdown(f'<div style="background-color: green; padding: 10px; border-radius: 5px;"> NOK {savings_int:,} over {Z} år! 💸   -   *inkl arb.avgift etc..</div>', unsafe_allow_html=True)
+        st.write(f" Besparelse: NOK {savings:,.2f} over {Z} år!💸")
         st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
         
-        st.write("Vi i WS er spesialister på å digitalisere manuelle oppgaver. Gi dine ansatte gaven av tid, og la oss hjelpe dere med å maksimere effektiviteten. Kontakt oss, og vi tar steget sammen - post@webstep.no")
+        st.write("Hjelp til å komme i gang? 👉 post@webstep.no")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. La WS være din guide på veien mot digitalisering.")
