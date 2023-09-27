@@ -62,9 +62,12 @@ with col1:
 
     # Bruke den totale kostnaden for en ansatt i stedet for bare årslønnen
     savings = calculate_savings(X, Y, Z, total_kostnad_per_ansatt)
-with col2:
+
     if st.button("Beregn på nytt"):
         st.experimental_rerun()
+
+with col2:
+
 
     # Resultat:
     st.write(f"🔍 **Ditt potensiale:**")
