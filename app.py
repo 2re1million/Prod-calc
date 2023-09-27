@@ -74,4 +74,4 @@ if savings > 0:
 else:
     st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. La WS være din guide på veien mot digitalisering.")
 
-    st.write("* - Regnestykket inkl arb.avgift og andre sosiale kostnaderfor arb.giver.)
+    st.write("* - Regnestykket inkl arb.avgift og andre sosiale kostnaderfor arb.giver.")
