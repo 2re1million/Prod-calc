@@ -50,7 +50,7 @@ with col1:
     # Inputs fra bruker
     X = st.slider('Hvor mange **minutter** bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
     Y = st.number_input('**Antall ansatte** som jevnlig utfører disse oppgavene?', step=1)
-    W = int(st.number_input('Ca. gjennomsnittlig **årlig lønn** for disse ansatte (i NOK):', value=700000, step=10000)) 
+    W = int(st.number_input('Ca. gjennomsnittlig **årlig lønn** for disse ansatte:', value=700000, step=10000)) 
     Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?', 1, 10, 3)
 
     # Kalkulere total kostnad for en ansatt
