@@ -76,7 +76,7 @@ with col2:
     savings_int = int(savings)
 
     if savings > 0:
-        st.write(f" Besparelse: NOK {savings:,.2f} over {Z} år!💸")
+        st.write(f" Besparelse: NOK {savings_int:,} over {Z} år!💸")
         st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
         
         st.write("Hjelp til å komme i gang? 👉 post@webstep.no")
