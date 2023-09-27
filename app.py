@@ -49,9 +49,9 @@ Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid dig
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
 
 # Inputs fra bruker
-X = st.slider('Timer per uke en ansatt bruker på repetitiv oppgaveer?)', 0, 10, 4, step=0.5)
-Y = st.number_input('Antall ansatte som jevnlig utfører disse oppgaven hver uke?', 5)
-W = st.number_input('Gjennomsnittlig årlig lønn for disse ansatte (i NOK)*:', value=664680.0, format='%f')
+X = st.slider('Hvor mange minutter bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
+Y = int(st.text_input('Hvor mange ansatte utfører disse oppgavene regelmessig?', 5))
+W = st.number_input('Gjennomsnittlig årlig lønn for disse ansatte (i NOK):', value=664680.0, format='%f')
 Z = st.slider('Hvor mange år ønsker du å se potensielle besparelser for?', 1, 10, 2)
 
 # Kalkulere total kostnad for en ansatt
