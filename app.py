@@ -76,4 +76,4 @@ with col2:
         
         st.write("Hjelp til å komme i gang? 👉 post@webstep.no")
     else:
-        st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. La WS være din guide på veien mot digitalisering.")
+        st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
