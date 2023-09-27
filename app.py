@@ -46,6 +46,7 @@ I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive o
 Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid digitaliseres bort!
 """)
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
+savings_int = int(savings)
 
 # Opprett to kolonner
 col1, col2 = st.columns(2)
