@@ -49,10 +49,10 @@ Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid dig
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
 
 # Inputs fra bruker
-X = st.slider('Hvor mange minutter bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
-Y = int(st.text_input('Hvor mange ansatte utfører disse oppgavene regelmessig?', 5))
-W = st.number_input('Gjennomsnittlig årlig lønn for disse ansatte (i NOK):', value=664680.0, format='%f')
-Z = st.slider('Hvor mange år ønsker du å se potensielle besparelser for?', 1, 10, 2)
+X = st.slider('Hvor mange **minutter** bruker en ansatt på repetitive manuelle oppgaver hver dag?', 0, 120, 30, step=5)
+st.number_input('**Antall ansatte** som jevnlig utfører disse oppgavene?', 8)
+W = st.number_input('Gjennomsnittlig **årlig lønn** for disse ansatte (i NOK):', value=700000.0, format='%f')
+Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?', 1, 10, 3)
 
 # Kalkulere total kostnad for en ansatt
 total_kostnad_per_ansatt = totale_kostnader_for_bedriften(W)
@@ -70,7 +70,7 @@ if savings > 0:
     st.write(f"Tenk deg å kunne frigjøre opptil:")
     st.write(f" NOK {savings:,.2f} over {Z} år! 💸")
     st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
-    st.write(" **La WS vise vei!** 🚀")
+    st.write(" Sosiale utgifter er inkludert")
     st.write("Vi i WS er spesialister på å digitalisere manuelle oppgaver. Gi dine ansatte gaven av tid, og la oss hjelpe dere med å maksimere effektiviteten. Kontakt oss, og vi tar steget sammen - post@webstep.no")
 else:
     st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. La WS være din guide på veien mot digitalisering.")
