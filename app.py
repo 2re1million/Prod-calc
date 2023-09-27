@@ -46,7 +46,7 @@ I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive o
 Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid digitaliseres bort!
 """)
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
-savings_int = int(savings)
+
 
 # Opprett to kolonner
 col1, col2 = st.columns(2)
@@ -73,10 +73,12 @@ with col2:
     # Resultat:
     st.write(f"🔍 **Ditt potensiale:**")
 
+    savings_int = int(savings)
+
     if savings > 0:
-        st.write(f" Besparelse: NOK {savings:,.2f} over {Z} år!💸")
+        st.markdown(f'<div style="background-color: green; padding: 10px; border-radius: 5px;"> NOK {savings_int:,} over {Z} år! 💸   -   *inkl arb.avgift etc..</div>', unsafe_allow_html=True)
         st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
         
-        st.write("Hjelp til å komme igang? 👉 post@webstep.no")
+        st.write("Vi i WS er spesialister på å digitalisere manuelle oppgaver. Gi dine ansatte gaven av tid, og la oss hjelpe dere med å maksimere effektiviteten. Kontakt oss, og vi tar steget sammen - post@webstep.no")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. La WS være din guide på veien mot digitalisering.")
