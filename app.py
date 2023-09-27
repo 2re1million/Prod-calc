@@ -40,9 +40,7 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
 
 st.title('Innsparingskalkulatoren: 🔍 ')
 
-st.info("🕰️ Kjenner du den frustrerende følelsen av å repetere de samme manuelle oppgavene hver eneste dag? Eller se timer fly mens du dobbelplotter data i forskjellige systemer? Du er ikke alene. Dette er en skjult produktivitetsdreper som mange bedrifter overser. I en tid hvor teknologi former hverdagen vår, er det på tide å spørre: Hvorfor bruker vi fortsatt verdifull tid på oppgaver som kan automatiseres?")
-st.write(" Er du nysgjerrig på hvor mye tid og penger du kan frigjøre? Prøv kalkulatoren under og oppdag det enorme sparepotensialet ved å digitalisere de repetitive oppgavene.")
-
+st.info("🕰️ Kjenner du til frustrasjonen når gamle, trege datasystemer bremser arbeidsdagen din? Eller den følelsen, når timene flyr mens du dobbelplotter samme informasjon i to systemer, fordi de ikke kommuniserer med hverandre? Du er ikke alene. Utdaterte systemer er skjulte produktivitetsdrepere som altfor mange bedrifter overser. I en æra hvor teknologi burde forenkle hverdagen vår, må vi spørre: Hvorfor bruker vi fremdeles tid på oppgaver som kan automatiseres eller optimaliseres?")
 # Opprett to kolonner 
 col1, col2 = st.columns(2)
 
