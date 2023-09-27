@@ -41,6 +41,8 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
 st.title('Innsparingskalkulatoren: 🔍 ')
 
 st.info("🕰️ Kjenner du til frustrasjonen når gamle, trege datasystemer bremser arbeidsdagen din? Eller den følelsen, når timene flyr mens du dobbelplotter samme informasjon i to systemer, fordi de ikke kommuniserer med hverandre? Du er ikke alene. Utdaterte systemer er skjulte produktivitetsdrepere som altfor mange bedrifter overser. I en æra hvor teknologi burde forenkle hverdagen vår, må vi spørre: Hvorfor bruker vi fremdeles tid på oppgaver som kan automatiseres eller optimaliseres?")
+st.write("Vil du vite hva du kan spare? Utforsk kalkulatoren under og se potensialet i å oppgradere din digitale hverdag.")
+
 # Opprett to kolonner 
 col1, col2 = st.columns(2)
 
