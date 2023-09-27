@@ -48,6 +48,9 @@ Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid dig
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
 
 
+st.info("💡 Exponential growth is called the eight wonder of the world. It is a rapid increase in a quantity over time, characterized by a rate that is proportional to the current value of the quantity.")
+
+
 # Opprett to kolonner
 col1, col2 = st.columns(2)
 
