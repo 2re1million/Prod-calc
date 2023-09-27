@@ -58,7 +58,7 @@ Z = st.slider('Hvor mange **år** ønsker du å se potensielle besparelser for?'
 total_kostnad_per_ansatt = totale_kostnader_for_bedriften(W)
 
 # Bruke den totale kostnaden for en ansatt i stedet for bare årslønnen
-savings = calculate_savings(X, Y, Z,)
+savings = calculate_savings(X, Y, Z, total_kostnad_per_ansatt)
 
 if st.button("Beregn på nytt"):
     st.experimental_rerun()
