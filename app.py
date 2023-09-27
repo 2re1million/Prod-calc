@@ -39,21 +39,11 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
     return total_savings
 
 # Set title and intro message
-st.title('Exponential Savings 🤑')
+st.title('Din innsparingskalkulator: 🤑')
 
-st.info("💡 Exponential growth is called the eight wonder of the world. It is a rapid increase in a quantity over time, characterized by a rate that is proportional to the current value of the quantity.")
-
-st.markdown('## Din innsparingskalkulator: ')
-st.markdown('### Hva koster manuelt arbeid bedriften virkelig?')
-# Ingress
-st.write("""
-I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive oppgaver manuelt? Føre inn samme data i to forskjellige system, er for eksempel en notorisk tidstyv. 
-Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid digitaliseres bort!
-""")
+st.info("💡 I en verden dominert av teknologi, hvorfor skal vi fortsatt utføre repetitive oppgaver manuelt? Føre inn samme data i to forskjellige system, er for eksempel en notorisk tidstyv. 
+Heldigvis kan dette gjøres noe med! Med riktig teknologi kan manuelt arbeid digitaliseres bort!")
 st.write("Bruk kalkulatoren under og avslør hvor mye du faktisk kan spare ved å digitalisere disse gjentagende arbeidsoppgavene")
-
-st.info("💡 Exponential growth is called the eight wonder of the world. It is a rapid increase in a quantity over time, characterized by a rate that is proportional to the current value of the quantity.")
-
 
 # Opprett to kolonner
 col1, col2 = st.columns(2)
