@@ -1,5 +1,4 @@
 import streamlit as st
-import random
 
 def totale_kostnader_for_bedriften(arslonn: float) -> float:
     # Feriepenger
@@ -63,20 +62,15 @@ with col1:
 with col2:
 
 
-    # A/B testing
-    variant = random.choice(['A', 'B'])
+    # Resultat:
+    st.write(f"🔍 **Ditt potensiale:**")
+
+    savings_int = int(savings)
+
     if savings > 0:
         st.write(f" Besparelse: NOK **{savings_int:,}** over **{Z}** år!💸")
         st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din. Og mer fornøyde og motiverte ansatte er en heldig bi-effekt som kommer på toppen.")
         
-        # Hvis variant A
-        if variant == 'A':
-            st.write("Trenger du hjelp? Kontakt oss!")
-            st.button("Send oss en e-post")
-            
-        # Hvis variant B
-        elif variant == 'B':
-            link = '[Trenger du hjelp? Klikk her for mer informasjon!](https://dinlandingside.no)'
-            st.markdown(link, unsafe_allow_html=True)
+        st.write("Hjelp til å komme i gang? 👉 post@webstep.no")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
