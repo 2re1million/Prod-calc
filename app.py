@@ -58,15 +58,14 @@ with col1:
 
     # Bruke den totale kostnaden for en ansatt i stedet for bare årslønnen
     savings = calculate_savings(X, Y, Z, total_kostnad_per_ansatt)
-
+    savings_int = int(savings)
 with col2:
-
 
     # Resultat:
     st.write(f"🔍 **Ditt potensiale:**")
 
     savings_int = int(savings)
-
+    
     if savings > 0:
         st.write(f" Besparelse: NOK **{savings_int:,}** over **{Z}** år!💸")
         st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din. Og mer fornøyde og motiverte ansatte er en heldig bi-effekt som kommer på toppen.")
