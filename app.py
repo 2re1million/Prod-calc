@@ -78,7 +78,6 @@ with col2:
         st.write("**Og ikke nok med det, tenk den utilsiktede gevinsten av**")
         st.write("* Mer motiverte ansatte som nå kan fokusere på mer spennende arbeidsoppgaver")
         st.write("* Nye nyttige funksjoner som følger med et skreddersydd system")
-        st.write("* Mindre tid på opplæring av enklere brukervennlige systemer") 
         
         if variant == 'A':
             st.write("Interessant?")
