@@ -77,9 +77,9 @@ with col2:
 
         if variant == 'A':
             st.write("Trenger du hjelp?")
-            st.button("Kontakt oss på e-post")
+            st.link_button("Lær mer!", "https://streamlit.io/gallery")
         elif variant == 'B':
-            link = '[Trenger du hjelp? Klikk her for mer informasjon!](https://dinlandingside.no)'
-            st.markdown(link, unsafe_allow_html=True)
+            st.write("Trenger du hjelp?")
+            st.link_button("Lær mer!", "https://streamlit.io/gallery")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
