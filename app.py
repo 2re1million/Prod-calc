@@ -1,6 +1,7 @@
 import streamlit as st
 import random
-variant = random.choice(['A', 'B'])
+
+
 
 def totale_kostnader_for_bedriften(arslonn: float) -> float:
     # Feriepenger
@@ -61,22 +62,24 @@ with col1:
     # Bruke den totale kostnaden for en ansatt i stedet for bare årslønnen
     savings = calculate_savings(X, Y, Z, total_kostnad_per_ansatt)
     savings_int = int(savings)
+    
 with col2:
-
+    
+    variant = random.choice(['A', 'B'])
     # Resultat:
     st.write(f"🔍 **Ditt potensiale:**")
 
     savings_int = int(savings)
     
-if savings > 0:
-    st.write(f" Besparelse: NOK **{savings_int:,}** over **{Z}** år!💸")
-    st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din. Og mer fornøyde og motiverte ansatte er en heldig bi-effekt som kommer på toppen.")
+    if savings > 0:
+        st.write(f" Besparelse: NOK **{savings_int:,}** over **{Z}** år!💸")
+        st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din. Og mer fornøyde og motiverte ansatte er en heldig bi-effekt som kommer på toppen.")
 
-    if variant == 'A':
-        st.write("Trenger du hjelp?")
-        st.button("Kontakt oss på e-post")
-    elif variant == 'B':
-        link = '[Trenger du hjelp? Klikk her for mer informasjon!](https://dinlandingside.no)'
-        st.markdown(link, unsafe_allow_html=True)
-else:
-    st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
+        if variant == 'A':
+            st.write("Trenger du hjelp?")
+            st.button("Kontakt oss på e-post")
+        elif variant == 'B':
+            link = '[Trenger du hjelp? Klikk her for mer informasjon!](https://dinlandingside.no)'
+            st.markdown(link, unsafe_allow_html=True)
+    else:
+        st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
