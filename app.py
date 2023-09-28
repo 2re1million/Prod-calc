@@ -73,8 +73,12 @@ with col2:
     
     if savings > 0:
         st.write(f" Besparelse: NOK **{savings_int:,}** over **{Z}** år!💸")
-        st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din. Og mer fornøyde og motiverte ansatte er en heldig bi-effekt som kommer på toppen.")
-
+        st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
+        st.write("**Og ikke nok med det, tenk den utilsiktede gevinsten av**")
+        st.write("* Mer motiverte ansatte som nå kan fokusere på mer spennende arbeidsoppgaver")
+        st.write("* Nye nyttige funksjoner som følger med et skreddersydd system")
+        st.write("* Mindre tid på opplæring av enklere brukervennlige systemer") 
+        
         if variant == 'A':
             st.write("Interessant?")
             st.link_button("Lær mer!💡", "https://streamlit.io/gallery1")
