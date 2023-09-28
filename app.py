@@ -44,7 +44,7 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
 st.title('Innsparingskalkulatoren: 🔍 ')
 
 st.info("🕰️ Kjenner du til frustrasjonen når gamle, trege datasystemer bremser arbeidsdagen din? Eller irritasjon av å måtte kaste bort tid på å dobbel plotte samme informasjon i to forskjellige systemer, fordi de ikke kommuniserer med hverandre?  Du er ikke alene. Utdaterte datasystemer er skjulte produktivitetsdrepere som altfor mange bedrifter overser. I en æra hvor teknologi burde forenkle hverdagen vår, må vi spørre: Hvorfor bruker vi fremdeles tid på oppgaver som kan automatiseres?")
-st.write("Vil du vite hva du kan spare i kroner og øre? Utforsk kalkulatoren under og se potensialet i å digitalisere arbeidshverdagen i din bedrift.") 
+st.write("Utforsk kalkulatoren under og se potensialet for sparing i kroner og øre, ved digitalisering av dine gamle systemer") 
 
 # Opprett to kolonner 
 col1, col2 = st.columns(2)
@@ -77,9 +77,9 @@ with col2:
 
         if variant == 'A':
             st.write("Interessant?")
-            st.link_button("Lær mer!💡", "https://streamlit.io/gallery")
+            st.link_button("Lær mer!💡", "https://streamlit.io/gallery1")
         elif variant == 'B':
             st.write("Interessant?")
-            st.link_button("Lær mer!💡", "https://streamlit.io/gallery")
+            st.link_button("Lær mer!💡", "https://streamlit.io/gallery2")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
