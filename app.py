@@ -75,7 +75,7 @@ with col2:
         st.write(f" Besparelse: NOK **{savings_int:,}** over **{Z}** år!💸")
         st.write(" ")
         st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din.")
-        st.write("**Og ikke nok med det, tenk den utilsiktede gevinsten av**")
+        st.write("**Tenk også på den utilsiktede gevinsten av:**")
         st.write("* Mer motiverte ansatte som nå kan fokusere på mer spennende arbeidsoppgaver")
         st.write("* Nye nyttige funksjoner som følger med et skreddersydd system")
         
