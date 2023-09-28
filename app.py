@@ -76,10 +76,10 @@ with col2:
         st.write(f"Dette er verdifulle ressurser som kan reinvesteres i andre produktive områder av virksomheten din. Og mer fornøyde og motiverte ansatte er en heldig bi-effekt som kommer på toppen.")
 
         if variant == 'A':
-            st.write("Trenger du hjelp?")
-            st.link_button("Lær mer!", "https://streamlit.io/gallery")
+            st.write("Interessant?")
+            st.link_button("Lær mer!💡", "https://streamlit.io/gallery")
         elif variant == 'B':
-            st.write("Trenger du hjelp?")
-            st.link_button("Lær mer!", "https://streamlit.io/gallery")
+            st.write("Interessant?")
+            st.link_button("Lær mer!💡", "https://streamlit.io/gallery")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
