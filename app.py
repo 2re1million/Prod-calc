@@ -41,7 +41,7 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
     total_savings = total_hours_saved * avg_hourly_salary * num_years
     return total_savings
 
-st.title('Innsparingskalkulatoren: 🔍 ')
+st.title('Digitaliseringskalkulatoren: 🔍 ')
 
 st.info("🕰️ Utdaterte datasystemer er frustrerende, stjeler tid og bremser produktivitet. I en tid der teknologi burde være vår styrke, hvorfor holder vi fortsatt fast på med oppgaver som kan automatiseres?")
 st.write("Utforsk kalkulatoren under og se potensialet for sparing i kroner og øre, ved digitalisering av dine gamle systemer") 
