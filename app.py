@@ -81,10 +81,10 @@ with col2:
         
         if variant == 'A':
             st.write("Interessant?")
-            st.link_button("DM meg!💡", "https://www.linkedin.com/in/thore-tollevik-434621b5/")
+            st.link_button("Ta kontakt!💡", "https://www.linkedin.com/in/thore-tollevik-434621b5/")
         elif variant == 'B':
             st.write("Interessant?")
-            st.link_button("Mail meg!💡", "thore.tollevik@webstep.no")
+            st.link_button("Ta kontakt!💡", "https://www.linkedin.com/in/thore-tollevik-434621b5/")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
 st.write(" ")
