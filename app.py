@@ -44,7 +44,7 @@ def calculate_savings(minutes_saved, num_employees, num_years, avg_salary):
 st.title('Digitaliseringskalkulatoren: 🔍 ')
 
 st.info("🕰️ Utdaterte datasystemer er frustrerende, stjeler tid og bremser produktivitet. I en tid der teknologi burde være vår styrke, hvorfor holder vi fortsatt fast på med oppgaver som kan automatiseres? ")
-st.write("Utforsk kalkulatoren under og se potensialet for sparing i kroner og øre. Utforsk hvordan digitalisering kan kutte kostnader ved å eliminere dobbelplotting pga systemer ikke kommuniserer, eller erstatte systemer bedriften din har vokst i fra for lengst") 
+st.write("Utforsk kalkulatoren under og se potensialet for sparing i kroner og øre. Sjekk ut hvordan digitalisering kan kutte kostnader ved å eliminere dobbelplotting pga systemer ikke kommuniserer, eller erstatte systemer bedriften din har vokst i fra for lengst") 
 
 # Opprett to kolonner 
 col1, col2 = st.columns(2)
