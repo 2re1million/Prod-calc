@@ -80,10 +80,10 @@ with col2:
         st.write("* Nye nyttige funksjoner som følger med et skreddersydd system")
         
         if variant == 'A':
-            st.write("Interessant?")
+            st.write("På tide med nye systemer?")
             st.link_button("Ta kontakt!💡", "https://www.linkedin.com/in/thore-tollevik-434621b5/")
         elif variant == 'B':
-            st.write("Interessant?")
+            st.write("På tide med nye systemer?")
             st.link_button("Ta kontakt!💡", "https://www.linkedin.com/in/thore-tollevik-434621b5/")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
