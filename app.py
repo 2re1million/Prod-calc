@@ -81,9 +81,9 @@ with col2:
         
         if variant == 'A':
             st.write("Interessant?")
-            st.link_button("Lær mer!💡", "https://streamlit.io/gallery1")
+            st.link_button("Lær mer!💡", "https://share.hsforms.com/1iCewcOnES82h7xK1RmbvzA2nwkt")
         elif variant == 'B':
             st.write("Interessant?")
-            st.link_button("Lær mer!💡", "https://streamlit.io/gallery2")
+            st.link_button("Lær mer!💡", "https://share.hsforms.com/1iCewcOnES82h7xK1RmbvzA2nwkt")
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
