@@ -88,4 +88,4 @@ with col2:
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
 
-st.write("Disclaimer: Selvsagt er det veldig mange andre faktorer som kan spille inn på pris, men gir hvertfall en artig "ball-park" om hvor mye penger som ligger i effektivisering :)")
+st.write("Disclaimer: Selvfølgelig er det mange andre faktorer som kan påvirke kostnader, men kalkulatoren gir en morsom pekepinn på hvor mye som kan spare med effektivisering. Ta det som en artig ball-park estimat og tankevekker ;) ")
