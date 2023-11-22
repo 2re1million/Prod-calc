@@ -88,4 +88,4 @@ with col2:
     else:
         st.write("Selv mindre effektivitetsøkninger kan akkumuleres til betydelige besparelser over tid. Prosjekter kan med det betale seg ned av seg selv over tid")
 
-st.write("Disclaimer: Selvsagt vil det være hundre ting som spiller inn på besparelse, men dette gir en ball-park") :)
+st.write("Disclaimer: Selvsagt vil det være hundre ting som spiller inn på besparelse, men dette gir en ball-park :)")
